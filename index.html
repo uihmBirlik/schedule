@@ -9,6 +9,7 @@
       }
       table {
         background-color: transparent;
+        width: 100%;
       }
       td, th {
         border: 1px solid black;
@@ -19,7 +20,19 @@
         background-color: linear-gradient(to right, #A9F1DF,#FFBBBB);
       }
 
-
+      /* Add media queries for responsive design */
+      @media only screen and (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+        th {
+          text-align: left;
+        }
+        td {
+          text-align: right;
+          padding-right: 10px;
+        }
+      }
     </style>
 </head>
 <body>
@@ -47,6 +60,7 @@
             </tr>
             <tr>
                 <td></td>
+
                 <td>20:00 – 21:00</td>
                 <td>Otele Giriş</td>
             </tr>
@@ -72,7 +86,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td>16:30 – 18</td>
+                <td>18:30 – 20:00</td>
                 <td>Gala Yemeği ve Namaz
                     Açılış programı (protokol katılımı)
                 </td>
